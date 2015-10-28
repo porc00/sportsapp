@@ -1,0 +1,52 @@
+<ion-pane>
+    <ion-content class="" scroll="false">
+
+        <ion-side-menus>
+            <!-- Center content -->
+            <ion-side-menu-content>
+                <button class="button button-icon icon ion-navicon-round tab-menu-left">
+                </button>
+                <button class="button button-icon icon ion-navicon-round tab-menu-right">
+                </button>
+
+                <div id="map"></div>
+            </ion-side-menu-content>
+
+            <!-- Left menu -->
+            <ion-side-menu side="left" width="{{eightyPercentOfScreen}}">
+                <div class="item range">
+                    <i class="icon ion-volume-low"></i>
+                    <input type="range" name="volume">
+                    <i class="icon ion-volume-high"></i>
+                </div>
+
+                <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-sunny-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-sunny"></i>
+                    </div>
+                </div>
+            </ion-side-menu>
+
+            <!-- Right menu -->
+            <ion-side-menu side="right" width="{{eightyPercentOfScreen}}">
+                <div class="item range">
+                    <i class="icon ion-volume-low"></i>
+                    <input type="range" name="volume">
+                    <i class="icon ion-volume-high"></i>
+                </div>
+
+                <div class="list">
+                    <div class="item range range-positive">
+                        <i class="icon ion-ios-sunny-outline"></i>
+                        <input type="range" name="volume" min="0" max="100" value="33">
+                        <i class="icon ion-ios-sunny"></i>
+                    </div>
+                </div>
+            </ion-side-menu>
+
+        </ion-side-menus>
+
+    </ion-content>
+</ion-pane>

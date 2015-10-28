@@ -1,7 +1,7 @@
 angular.module('sportsApp', [
     'angular-meteor',
-    'ionic',
-    'ionMdInput'
+    'ionic'
+
 ]);
 
 onReady = function() {

@@ -2,7 +2,7 @@ ion-nav-view.has-header.has-footer.view-container {
   height: auto;
 }
 
-html, h1, body, p , a{
+html, h1, h2, h3, body, p , a{
 	font-family:"Roboto" !important;
 	font-weight:700 !important;
 }
@@ -42,7 +42,7 @@ html, h1, body, p , a{
   height: 50px;
   background: white;
    
- // animation: ripple-animation 2s;
+  animation: ripple-animation 2s;
 }
 
 

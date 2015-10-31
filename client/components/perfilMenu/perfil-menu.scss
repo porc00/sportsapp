@@ -1,0 +1,33 @@
+.profile-header{
+
+	background-image: url('profile-header-background.jpg');
+	background-size: 100% 100%;
+	border:0px;
+	padding-top: 20px;	
+
+	h4{
+		margin-left: 15px;
+	}
+
+	img{
+		max-width: 56px !important;
+		max-height: 56px !important;
+	}
+
+	h4:last-child{
+		padding-bottom: 10px;
+	}
+}
+.profile-header .item{
+	border: 0px;
+	padding-bottom: 10px;
+}
+
+.profile-options{
+	i{
+		color:grey;
+	}
+	.item{
+		border:0px;
+	}
+}

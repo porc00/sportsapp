@@ -1,0 +1,92 @@
+.rental-form{
+	.mfb-component--tr{
+		top:150px;
+	}
+
+	.list{
+		padding-bottom: 100px;
+
+	}
+
+	.rental-form-header {
+	 	i{
+	 		color: white;
+	 		font-size: 150px;
+	 	}
+	 	text-align: center;
+	    background-size: 100% 100%;
+	    background-color: lightgrey;
+	    border: 0px;
+	    padding-top: 20px;
+	   	height: 200px;
+	}
+
+	.rental-form-map{
+		text-align: center; 
+		width:94%;
+		margin-left: 5%;
+		margin-top: 25px;
+		height: 200px;
+		position:relative;
+
+		#map-rental{
+		   height: 100%;
+		   width: 100%;
+		   position: absolute;
+		   top: 0px;
+		   left: 0px;
+		   z-index: 0;
+		}
+	}
+
+	.item-input{
+		font-size: 16px;
+	}
+
+	i.rental-form-icon{
+		font-size: 24px;
+		padding-top: 30px;
+	}
+	
+	label{
+		border-top:0px;
+		border-right:0px;
+		border-left:0px;
+		padding-left: 0px;
+		margin-left: 40px;
+	}
+
+	.inline-form{
+		margin-left:10px;
+	}	
+	.inline-form  label{
+		width:48%;
+		margin-right: 10px;
+		margin-left: 5px;
+		padding-top: 25px;
+	}
+
+	p{
+		margin-top: 50px;
+		margin-left:40px;
+		margin-bottom: 0px;
+	}
+
+	.underline{
+		border-bottom:1px solid #dddddd;
+		padding-bottom: 0px;
+	}
+
+	.pricing{
+		p {
+			width:50%;
+			margin-left: 0px;
+			margin-top: 21px;
+		}
+
+		label{
+			margin-left: 0px;
+			width:50%;
+		}
+	}
+}

@@ -1,5 +1,26 @@
-<ion-pane>
-    <ion-content class="" scroll="false" data-tap-disabled="true">
+<ion-view>
+    <toolbar></toolbar>
+    <ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+        <ion-tab title="All" href="/" class="ripple">
+        </ion-tab>
+        <ion-tab title="Classes" href="/about" class="ripple">
+        </ion-tab>
+        <ion-tab title="Rental" class="ripple">
+        </ion-tab>
+        <ion-tab title="Spots" class="ripple">
+        </ion-tab>
+    </ion-tabs>
+
+    <ion-content class="has-header has-subheader" scroll="false" data-tap-disabled="true">
         <div id="map"></div>
+
+        <div mfb-menu position="br" class="floating-button" effect="zoomin" active-icon="ion-plus-round" resting-icon="ion-plus-round">
+            <a mfb-button icon="ion-edit" ui-sref="about" label="Classes"></a>
+            <a mfb-button icon="ion-camera" ui-sref="about" label="Rental"></a>
+            <a mfb-button icon="ion-pinpoint" ui-sref="about" label="Spots"></a>
+        </div>
+
     </ion-content>
-</ion-pane>
+    <nav></nav>
+
+</ion-view>

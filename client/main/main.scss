@@ -13,7 +13,7 @@
 #map {
     height: 100%;
     width: 100%;
-    position: fixed !important;
+    position: absolute !important;
     top: 0px;
     left: 0px;
     z-index: 0;
@@ -124,4 +124,10 @@
     -webkit-transition: 1s opacity linear;
     transition: 1s opacity linear;
     visibility: visible;
+}
+
+.floating-button{
+    .mfb-component--br{
+        bottom:40px;
+    }
 }

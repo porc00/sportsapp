@@ -1,2 +1,69 @@
-<ion-content>
-</ion-content>
+<ion-view title="New Rental">
+
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div class="buttons">
+            <button class="button-clear" ui-sref="main">
+                <i class="ion-arrow-left-c"></i>
+            </button>
+        </div>
+        <h1 class="title">New Class</h1>
+        <div class="buttons">
+            <button class="button">Create</button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content class="has-header rental-form">
+        <div mfb-menu position="tr" class="floating-button" active-icon="ion-camera" resting-icon="ion-camera">
+        </div>
+
+        <div class="rental-form-header">
+            <i class="icon ion-image"> </i>
+        </div>
+        <div class="list">
+
+            <ion-md-input placeholder="Add Title" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Description" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Extras" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Location" highlight-color="energized" type="text"></ion-md-input>
+
+            <ion-scroll direction="none">
+                <div class="rental-form-map">
+                    <div id="map-rental"></div>
+                </div>
+            </ion-scroll>
+
+            <p>Availability</p>
+
+            <div class="inline-form item-input-inset">
+                <i class="icon ion-android-time placeholder-icon rental-form-icon"></i>
+                <ion-md-input placeholder="From" highlight-color="energized" type="text"></ion-md-input>
+                <ion-md-input placeholder="Until" highlight-color="energized" type="text"></ion-md-input>
+            </div>
+
+            <p class="underline">Pricing</p>
+
+            <div class="row pricing">
+
+                <div class="col col-10 col-center" style="text-align: right">
+                    <i class="icon ion-social-usd"></i>
+                </div>
+                <div class="col col-90">
+                    <div class="row underline">
+                        <p>Weekly</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                    </div>
+                    <div class="row underline">
+                        <p>Daily</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                    </div>
+                    <div class="row underline">
+                        <p>Hourly</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

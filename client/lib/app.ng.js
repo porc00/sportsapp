@@ -1,6 +1,9 @@
 angular.module('sportsApp', [
     'angular-meteor',
-    'ionic'
+    'ionic',
+    'ng-mfb',
+    'ionMdInput',
+    'ionic-datepicker'
 
 ]);
 

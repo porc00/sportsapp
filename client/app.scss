@@ -35,6 +35,26 @@ html, h1, h2, h3, body, p , a{
   overflow:hidden;
 }
 
+.bar .button.button-icon .icon:before, .bar .button.button-icon:before, .bar .button.button-icon.icon-left:before, .bar .button.button-icon.icon-right:before{
+  font-size: 20px;
+}
+
+.text-container{
+  p:first-child{
+    margin-top: 10px;
+    margin-left: 16px;
+    opacity: 0.54;
+  }
+
+  p{
+    margin-left: 32px;
+    opacity: 0.87
+  }
+}
+
+
+
+
 .ripple-effect{
   position: relative;
   border-radius: 50%;

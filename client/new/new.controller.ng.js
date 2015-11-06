@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('sportsApp')
-    .controller('AboutCtrl', function($scope) {
-        $scope.viewName = 'About';
+    .controller('NewCtrl', function($scope, $ionicHistory, $stateParams) {
+        $scope.formType = $stateParams.formType;
+        $scope.goBack = function() {
+            $ionicHistory.goBack();
+        };
 
-        $scope.currentDate = new Date();
-        $scope.minDate = new Date(2105, 6, 1);
-        $scope.maxDate = new Date(2015, 6, 31);
 
         var mapOptions = {
             center: {

@@ -1,0 +1,57 @@
+<toolbar></toolbar>
+<ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <ion-tab title="Listings" class="ripple">
+    </ion-tab>
+    <ion-tab title="Bookings" class="ripple">
+    </ion-tab>
+    <ion-tab title="Favourite Spots" class="ripple">
+    </ion-tab>
+</ion-tabs>
+<ion-view title="Sportsapp">
+    <ion-content class="has-header has-subheader my-box" scroll="true" data-tap-disabled="true">
+        <div ng-controller="MyBoxCtrl">
+            <p class="title"> Forthcoming </p>
+
+            <!-- one listed item(directive please) -->
+            <div class="row list-item">
+                <div class="col col-20 list-item-image">
+                    <div class="white-stripe top"></div>
+                    <img src="/profile_pic.jpg">
+                    <div class="white-stripe bottom"></div>
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>Surf classes for kids </p>
+                    <p class="undertext">5 sold</p>
+                </div>
+            </div>
+
+            <p class="title"> Completed </p>
+            <!-- one listed item(directive please) -->
+            <div class="row list-item">
+                <div class="col col-20 list-item-image">
+                    <div class="white-stripe top"></div>
+                    <img src="/profile_pic.jpg">
+                    <div class="white-stripe bottom"></div>
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>Surf classes for kids </p>
+                    <p class="undertext">5 sold</p>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+
+    <ion-footer-bar class="bar-positive">
+        <div class="footer-div">
+            <a class="button button-icon icon ion-android-chat" ui-sref="chat"></a>
+
+        </div>
+        <div class="footer-div">
+            <a class="button button-icon icon ion-android-calendar" ui-sref="calendar"></a>
+        </div>
+    </ion-footer-bar>
+
+</ion-view>

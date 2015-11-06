@@ -1,18 +1,20 @@
+<ion-header-bar align-title="center" class="bar bar-positive">
+    <button ng-click="goBack()" class="button button-icon icon ion-android-close icon-clear"></button>
+    <h1 style="border: 1px solid light-grey" class="title">
+                {{formType}}
+    </h1>
+
+    <div class="buttons buttons-right">
+        <button class="button button-clear">
+            Create
+        </button>
+    </div>
+
+</ion-header-bar>
+
 <ion-view title="New Rental">
+    <ion-content class="rental-form has-header">
 
-    <ion-header-bar align-title="center" class="bar-positive">
-        <div class="buttons">
-            <button class="button-clear" ui-sref="main">
-                <i class="ion-arrow-left-c"></i>
-            </button>
-        </div>
-        <h1 class="title">New Class</h1>
-        <div class="buttons">
-            <button class="button">Create</button>
-        </div>
-    </ion-header-bar>
-
-    <ion-content class="has-header rental-form">
         <div mfb-menu position="tr" class="floating-button" active-icon="ion-camera" resting-icon="ion-camera">
         </div>
 

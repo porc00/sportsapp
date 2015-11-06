@@ -1,30 +1,39 @@
 .marker-detail-header{
 
+	min-height:40%;
 	background-repeat: no-repeat;
 	background-image: url('surfboards.jpg');
-	background-size: 100% 70%;
+	background-size: 100% 100%;
 	border:0px;
+	position:static;
 
 	h4{
-		position: relative;
-		top:20px
+		position: absolute;
+		top: 105px;
+		left: 16px;
+		font-size: medium;
+		font-opacity:0.87;
 	}
 
-	.item-avatar > img:first-child {
+	&.item-avatar > img:first-child {
 		max-width: 56px !important;
 		max-height: 56px !important;
 
+		position:absolute;
 		left: initial;
-		right:5%;
+		top:103px;
+		right:16px;
+
 	}
 	.item-avatar{
 		padding-left: 10px;
 		border:0px;
+		height: 100%;
 	}
 }
 
 .modal.marker-modal{
-	min-height: 240px;
+	min-height: 66%;
     top: initial;
     bottom: 0px;
 
@@ -32,9 +41,8 @@
    	width: 31%;
    	text-align: center;
    	margin-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
    }
 }
-
 
 

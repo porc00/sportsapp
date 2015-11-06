@@ -3,7 +3,8 @@ angular.module('sportsApp', [
     'ionic',
     'ng-mfb',
     'ionMdInput',
-    'ionic-datepicker'
+    'ionic-datepicker',
+    'ui.date'
 
 ]);
 

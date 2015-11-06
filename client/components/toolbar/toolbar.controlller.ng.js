@@ -1,12 +1,21 @@
 'use strict'
 
 angular.module('sportsApp')
-    .controller('ToolbarCtrl', function($scope, $ionicPopover, $ionicSideMenuDelegate) {
+    .controller('ToolbarCtrl', function($scope, $ionicPopover, $ionicHistory, $state, $ionicSideMenuDelegate) {
         $ionicPopover.fromTemplateUrl('my-popover.html', {
             scope: $scope
         }).then(function(popover) {
             $scope.popover = popover;
         });
+
+        $scope.showBack = false;
+        if ($state.current.name !== "main-map") {
+            $scope.showBack = true;
+        }
+
+        $scope.goBack = function() {
+            $ionicHistory.goBack();
+        };
 
         $scope.openPerfilMenu = function() {
             $ionicSideMenuDelegate.toggleLeft();

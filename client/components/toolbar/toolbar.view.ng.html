@@ -1,6 +1,10 @@
 <div ng-controller="ToolbarCtrl">
     <ion-header-bar align-title="left" class="bar bar-positive">
-        <button ng-click="openPerfilMenu()" class="button button-icon icon ion-navicon icon-clear"></button>
+        <!-- if main view -->
+        <button ng-hide="showBack" ng-click="openPerfilMenu()" class="button button-icon icon ion-navicon icon-clear"></button>
+        <!-- if not mainv iew -->
+        <button ng-show="showBack" ng-click="goBack()" class="button button-icon icon ion-arrow-left-c icon-clear"></button>
+
         <h1 style="border: 1px solid light-grey" class="title" ng-click="openPopover($event)">
         <div>
                 Sportsapp
@@ -12,7 +16,7 @@
         <div class="buttons buttons-right">
             <button class="button icon button-icon ion-android-search">
             </button>
-            <button class="button icon button-icon ion-ios-list ripple">
+            <button ui-sref="main-list" class="button icon button-icon ion-ios-list">
             </button>
         </div>
 
@@ -23,7 +27,7 @@
             <ion-radio ng-model="choice" ng-value="'A'">Surfing</ion-radio>
             <ion-radio ng-model="choice" ng-value="'B'">Kite-Surfing</ion-radio>
             <ion-radio ng-model="choice" ng-value="'C'">Wind Surf</ion-radio>
-            <ion-radio ng-model="choice" ng-value="'C'">Ice-skating</ion-radio>
+            <ion-radio ng-model="choice" ng-value="'D'">Ice-skating</ion-radio>
         </ion-popover-view>
     </script>
 </div>

@@ -4,8 +4,8 @@ angular.module('sportsApp')
     .config(function($stateProvider) {
         $stateProvider
             .state('about', {
-                url: '/about',
-                templateUrl: 'client/about/about.view.ng.html',
-                controller: 'AboutCtrl'
+                url: '/new/:formType',
+                templateUrl: 'client/new/new.view.ng.html',
+                controller: 'NewCtrl'
             });
     });

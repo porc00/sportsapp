@@ -1,31 +1,31 @@
 <div>
-    <div class="profile-header">
+    <div menu-close class="profile-menu-header" ng-click="goTo('personProfile')">
         <div class="item item-avatar" style="background-color:transparent ">
             <img src="profile_pic.jpg">
         </div>
         <h4>Vitor Avancini</h4>
-        <h4>Surfing Legend!</h4>
+        <h4>Surfing Instructor</h4>
     </div>
-    <div class="list profile-options">
+    <div class="list profile-menu-options">
 
-        <a class="item item-icon-left" href="#">
+        <a menu-close class="item item-icon-left" ui-sref="mybox">
             <i class="icon ion-ios-box"></i> My Box
         </a>
 
-        <a class="item item-icon-left" href="#">
+        <a menu-close class="item item-icon-left" ui-sref="chat">
             <i class="icon ion-android-chat"></i> Messages
         </a>
 
-        <a class="item item-icon-left" href="#">
+        <a menu-close class="item item-icon-left" ui-sref="calendar">
             <i class="icon ion-android-calendar"></i> Calendar
         </a>
 
-        <a class="item item-icon-left" href="#">
+        <a menu-close class="item item-icon-left" href="#">
             <i class="icon ion-android-people"></i> Connections
         </a>
     </div>
     <hr>
-    <div class="list profile-options">
+    <div class="list profile-menu-options">
 
         <a class="item item-icon-left" href="#">
             <i class="icon ion-android-settings"></i> Settings

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('sportsApp')
-    .controller('MapCtrl', function($scope, $rootScope, activityService) {
+    .controller('MapCtrl', function($scope, $rootScope, $state, $ionicModal, activityService) {
         $scope.markers = [];
         var activities = activityService.getActivities();
 
@@ -20,16 +20,33 @@ angular.module('sportsApp')
 
         loadMap($scope, activities);
         $scope.$on('$destroy', unbind);
+
+        $scope.goTo = function(path, id) {
+            $scope.modal.hide();
+            $state.go(path, {
+                'rentalId': id
+            });
+        };
+
+        $ionicModal.fromTemplateUrl('client/main/map/marker-detail-modal.view.ng.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal) {
+            $scope.modal = modal
+        })
+
+        $scope.isIos = ionic.Platform.platform() == 'ios';
     });
 
 
 function loadMap($scope, activities) {
     var mapOptions = {
         center: {
-            lat: -27.593500,
-            lng: -48.593500
+            lat: -27.6107332,
+            lng: -48.4748229
         },
-        zoom: 16
+        zoom: 10,
+        disableDefaultUI: true
     };
 
     if (!$scope.map) {
@@ -45,7 +62,7 @@ function loadMap($scope, activities) {
     activities.forEach(function(actv) {
 
         var marker = new google.maps.Marker({
-            position: actv.position,
+            position: actv.location,
             icon: actv.icon
         });
 

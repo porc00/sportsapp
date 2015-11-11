@@ -1,0 +1,55 @@
+<ion-header-bar align-title="center" class="bar bar-positive">
+    <button ng-click="goBack()" class="button button-icon icon ion-android-close icon-clear"></button>
+    <h1 style="border: 1px solid light-grey" class="title">
+               Equip Page
+    </h1>
+
+    <div class="buttons buttons-right">
+        <button class="button button-clear" ng-click="showConfirm()">
+            Request
+        </button>
+    </div>
+
+</ion-header-bar>
+
+<ion-view title="New Rental">
+    <ion-content class="rental-form has-header">
+
+        <div class="rental-header" ng-style="{'background-image':'url({{rental.image}})'}">
+            <i class="icon ion-image" ng-if="!rental.image"> </i>
+            <img class="round" src="profile_pic.jpg">
+        </div>
+        <div class="list">
+
+            <ion-md-input placeholder="Title" highlight-color="energized" type="text" ng-model="rental.title"></ion-md-input>
+            <ion-md-input placeholder="Description" highlight-color="energized" type="text" ng-model="rental.desc"></ion-md-input>
+            <ion-md-input placeholder="Extras" highlight-color="energized" type="text" ng-model="rental.extras"></ion-md-input>
+
+            <ion-scroll direction="none">
+                <div class="rental-form-map">
+                    <div id="map-rental"></div>
+                </div>
+            </ion-scroll>
+
+            <p>Availability</p>
+
+            <div class="inline-form item-input-inset">
+                <i class="icon ion-android-time placeholder-icon rental-form-icon"></i>
+                <ion-md-input placeholder="From" highlight-color="energized" type="text" ng-model="rental.availability.from"></ion-md-input>
+                <ion-md-input placeholder="Until" highlight-color="energized" type="text" ng-model="rental.availability.until"></ion-md-input>
+            </div>
+        </div>
+    </ion-content>
+
+    <div class="row request-footer">
+        <div class="col col-40">Send a Message</div>
+        <div class="col col-40"></div>
+        <div class="col col-20">Chat</div>
+    </div>
+
+    <ion-footer-bar class="bar-positive">
+        <p class="price">$15/Hour</p>
+        <p class="price">$25/Day</p>
+        <p class="price">$120/Month</p>
+    </ion-footer-bar>
+</ion-view>

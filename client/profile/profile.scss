@@ -1,0 +1,87 @@
+// profile.scss
+.profile-header{
+	min-height: 249px;
+	background-image: url('profile-header-background.jpg');
+	background-size: 100% 100%;
+	border:0px;
+	padding-top: 20px;	
+
+	h4{
+
+		&.top{
+			padding-top: 50px;
+			padding-bottom: 4px
+		}
+		margin-left: 38px;
+
+	}
+
+	img{
+		position:relative;
+		
+		&:first-child{
+			top:12px;
+			left:12px;
+		}
+
+		width: 96px;
+		height: 96px;
+		border-radius: 60px;
+
+		&.professional-profile{
+			position:absolute;
+			right: 20px;
+			width: 56px;
+			height: 56px;
+
+		}
+	}
+
+	h4:last-child{
+		padding-bottom: 10px;
+		margin-bottom: 0px;
+	}
+}
+.profile-header .item{
+	border: 0px;
+	padding-bottom: 10px;
+}
+
+.profile-options{
+	i{
+		color:grey;
+	}
+	.item{
+		border:0px;
+	}
+}
+
+
+.edit-button{
+    .mfb-component--br{
+        top:195px;
+        position: absolute;
+    }
+
+    .mfb-component__button--child, .mfb-component__button--main{
+    	background-color: #0c63ee;
+    }
+}
+
+.profile-map{
+		text-align: center; 
+		width:94%;
+		margin-left: 5%;
+		margin-top: 25px;
+		height: 200px;
+		position:relative;
+
+		#map-profile{
+		   height: 100%;
+		   width: 100%;
+		   position: absolute;
+		   top: 0px;
+		   left: 0px;
+		   z-index: 0;
+		}
+	}

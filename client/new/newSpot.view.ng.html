@@ -1,0 +1,38 @@
+<ion-header-bar align-title="center" class="bar bar-positive">
+    <button ng-click="goBack()" class="button button-icon icon ion-android-close icon-clear"></button>
+    <h1 style="border: 1px solid light-grey" class="title">
+                {{formType}}
+    </h1>
+
+    <div class="buttons buttons-right">
+        <button class="button button-clear">
+            Create
+        </button>
+    </div>
+
+</ion-header-bar>
+
+<ion-view title="New Rental">
+    <ion-content class="rental-form has-header">
+
+        <div mfb-menu position="tr" class="floating-button" active-icon="ion-camera" resting-icon="ion-camera">
+        </div>
+
+        <div class="rental-form-header">
+            <i class="icon ion-image"> </i>
+        </div>
+        <div class="list">
+
+            <ion-md-input placeholder="Add Title" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Description" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Sport" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Location" highlight-color="energized" type="text"></ion-md-input>
+
+            <ion-scroll direction="none">
+                <div class="rental-form-map">
+                    <div id="map-rental"></div>
+                </div>
+            </ion-scroll>
+        </div>
+    </ion-content>
+</ion-view>

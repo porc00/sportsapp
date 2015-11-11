@@ -8,12 +8,10 @@ angular.module('sportsApp')
         }
         //falta unbind on destroy
 
-        $ionicModal.fromTemplateUrl('client/main/map/marker-detail-modal.view.ng.html', {
-            scope: $scope,
-            animation: 'slide-in-up'
-        }).then(function(modal) {
-            $scope.modal = modal
-        })
+        $scope.$on('$ionicView.enter', function() {
+            console.log('tolog')
 
-
+            $scope.showTabs = $state.current.parent.indexOf("tabs") != -1;
+            $scope.showFooter = $state.current.parent.indexOf("footer") != -1;
+        });
     });

@@ -18,15 +18,15 @@
         <div mfb-menu position="tr" class="floating-button" active-icon="ion-camera" resting-icon="ion-camera">
         </div>
 
-        <div class="rental-form-header">
-            <i class="icon ion-image"> </i>
+        <div class="rental-form-header" ng-style="{'background-image':'url({{rental.image}})'}">
+            <i class="icon ion-image" ng-if="!rental.image"> </i>
         </div>
         <div class="list">
 
-            <ion-md-input placeholder="Add Title" highlight-color="energized" type="text"></ion-md-input>
-            <ion-md-input placeholder="Description" highlight-color="energized" type="text"></ion-md-input>
-            <ion-md-input placeholder="Extras" highlight-color="energized" type="text"></ion-md-input>
-            <ion-md-input placeholder="Location" highlight-color="energized" type="text"></ion-md-input>
+            <ion-md-input placeholder="Title" highlight-color="energized" type="text" ng-model="rental.title"></ion-md-input>
+            <ion-md-input placeholder="Description" highlight-color="energized" type="text" ng-model="rental.desc"></ion-md-input>
+            <ion-md-input placeholder="Extras" highlight-color="energized" type="text" ng-model="rental.extras"></ion-md-input>
+            <ion-md-input placeholder="Location" highlight-color="energized" type="text" ng-model="rental.location"></ion-md-input>
 
             <ion-scroll direction="none">
                 <div class="rental-form-map">
@@ -38,8 +38,8 @@
 
             <div class="inline-form item-input-inset">
                 <i class="icon ion-android-time placeholder-icon rental-form-icon"></i>
-                <ion-md-input placeholder="From" highlight-color="energized" type="text"></ion-md-input>
-                <ion-md-input placeholder="Until" highlight-color="energized" type="text"></ion-md-input>
+                <ion-md-input placeholder="From" highlight-color="energized" type="text" ng-model="rental.availability.from"></ion-md-input>
+                <ion-md-input placeholder="Until" highlight-color="energized" type="text" ng-model="rental.availability.until"></ion-md-input>
             </div>
 
             <p class="underline">Pricing</p>
@@ -52,15 +52,38 @@
                 <div class="col col-90">
                     <div class="row underline">
                         <p>Weekly</p>
-                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.weekly"></ion-md-input>
                     </div>
                     <div class="row underline">
                         <p>Daily</p>
-                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.daily"></ion-md-input>
                     </div>
                     <div class="row underline">
                         <p>Hourly</p>
-                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text"></ion-md-input>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.hourly"></ion-md-input>
+                    </div>
+                </div>
+            </div>
+
+            <p class="underline">In app purchase Pricing</p>
+
+            <div class="row pricing">
+
+                <div class="col col-10 col-center" style="text-align: right">
+                    <i class="icon ion-social-usd"></i>
+                </div>
+                <div class="col col-90">
+                    <div class="row underline">
+                        <p>Weekly</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.weekly"></ion-md-input>
+                    </div>
+                    <div class="row underline">
+                        <p>Daily</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.daily"></ion-md-input>
+                    </div>
+                    <div class="row underline">
+                        <p>Hourly</p>
+                        <ion-md-input placeholder="Insert value" highlight-color="energized" type="text" ng-model="rental.pricing.regular.hourly"></ion-md-input>
                     </div>
                 </div>
             </div>

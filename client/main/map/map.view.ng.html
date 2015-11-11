@@ -1,3 +1,11 @@
-<div>
-    <div id="map"></div>
+<div mfb-menu position="br" class="floating-button" effect="zoomin" active-icon="ion-android-arrow-down" resting-icon="ion-plus-round">
+    <a mfb-button icon="ion-edit" ui-sref="new({formType:'Class'})" label="Classes"></a>
+    <a mfb-button icon="ion-camera" ui-sref="new({formType:'Rental'})" label="Rental"></a>
+    <a mfb-button icon="ion-pinpoint" ui-sref="newSpot({formType:'Spots'})" label="Spots"></a>
 </div>
+
+<ion-content class="has-header has-footer" scroll="false" ng-class="{'has-subheader': !isIos}" data-tap-disabled="true">
+    <div>
+        <div id="map"></div>
+    </div>
+</ion-content>

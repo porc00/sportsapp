@@ -16,8 +16,11 @@
         <div class="buttons buttons-right">
             <button class="button icon button-icon ion-android-search">
             </button>
-            <button ui-sref="main-list" class="button icon button-icon ion-ios-list">
+            <button ng-if="!showBack" ng-click="goTo('main-list')" class="button icon button-icon ion-ios-list">
             </button>
+            <button ng-if="showBack" ng-click="goTo('main-map')" class="button icon button-icon ion-android-map">
+            </button>
+
         </div>
 
     </ion-header-bar>

@@ -1,0 +1,71 @@
+<ion-view>
+
+    <ion-content class="has-header has-footer" scroll="true" data-tap-disabled="false">
+        <div style=" background-color: #CFD8DC;">
+            <div mfb-menu position="br" class="edit-button" effect="zoomin" active-icon="ion-edit" resting-icon="ion-edit"></div>
+
+            <div class="profile-header" scroll="false">
+                <img src="profile_pic.jpg">
+                <img class="professional-profile round" src="profile_pic.jpg" ng-click="goTo('personProfile')">
+                <h4 class="top">Campeche Surf School</h4>
+
+            </div>
+
+            <!-- one listed item(directive please) -->
+            <!-- Informations about person -->
+            <p class="title">Info </p>
+
+            <div class="row text-container">
+                <div class="col col-20 text-container-image">
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>Member since 01/2016 </p>
+                </div>
+            </div>
+            <div class="row text-container">
+                <div class="col col-20 text-container-image">
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>We are a surfing school based on Barra da Lagoa Beach. We've got more than 15 years of experience and work with kids and adults.</p>
+                </div>
+            </div>
+            <div class="row text-container">
+                <div class="col col-20 text-container-image">
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>Little Prince Av, Florianopolis </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-20 col-center" style="text-align:center">
+                    <button class="button-icon icon ion-android-pin"></button>
+                </div>
+                <div class="col">
+                    <ion-scroll direction="none">
+                        <div class="profile-map">
+                            <div id="map-profile"></div>
+                        </div>
+                    </ion-scroll>
+                </div>
+            </div>
+
+            <p class="title">Reviews </p>
+            <!-- one listed item(directive please) -->
+            <div class="row text-container">
+                <div class="col col-20 text-container-image">
+                    <img class="round" src="/profile_pic.jpg">
+                </div>
+
+                <div class="col col-80 col-center">
+                    <p>Great Instructors and surf was awesome!</p>
+                    <p class="undertext">100 pts</p>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

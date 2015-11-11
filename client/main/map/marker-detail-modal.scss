@@ -13,6 +13,14 @@
 		left: 16px;
 		font-size: medium;
 		font-opacity:0.87;
+	
+		&.request-text{
+			right:20px;
+			left: initial;
+			top: 20px;
+			color: #FF6E40;
+		}
+
 	}
 
 	&.item-avatar > img:first-child {
@@ -36,13 +44,24 @@
 	min-height: 66%;
     top: initial;
     bottom: 0px;
-
-   p.price{
-   	width: 31%;
-   	text-align: center;
-   	margin-top: 5px;
-    font-size: 14px;
-   }
+ 
 }
+
+
+.marker-modal{
+		.text-container{
+		  p:first-child{
+		    margin-top: 10px;
+		    margin-left: 16px;
+		    opacity: 0.54;
+		  }
+
+		  p{
+		    margin-left: 32px;
+		    opacity: 0.87
+		}
+	}
+}
+	
 
 

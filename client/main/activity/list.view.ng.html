@@ -1,5 +1,11 @@
+<div mfb-menu position="br" class="floating-button" effect="zoomin" active-icon="ion-android-arrow-down" resting-icon="ion-plus-round">
+    <a mfb-button icon="ion-edit" ui-sref="new({formType:'Class'})" label="Classes"></a>
+    <a mfb-button icon="ion-camera" ui-sref="new({formType:'Rental'})" label="Rental"></a>
+    <a mfb-button icon="ion-pinpoint" ui-sref="newSpot({formType:'Spots'})" label="Spots"></a>
+</div>
+
 <ion-view title="Sportsapp">
-    <ion-content class="activity-list" scroll="true" data-tap-disabled="true">
+    <ion-content class="activity-list has-header has-subheader" scroll="true" data-tap-disabled="false">
         <div ng-controller="ListCtrl">
 
             <activity ng-repeat="actv in activities"> </activity>

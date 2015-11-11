@@ -90,3 +90,30 @@
 		}
 	}
 }
+
+.request-footer{
+	:first-child{
+		color: white;
+	}
+			
+	color:#FF6E40;
+	background-color:#424242;
+	position:fixed; 
+	bottom:44px;
+	z-index:20
+}
+
+.rental-header{
+	height: 200px;	   
+	background-size: 100% 100%;
+
+
+	img{
+		position: absolute;
+		top:172px;
+		right:20px;
+
+		width: 56px;
+		height: 56px;
+	}
+}

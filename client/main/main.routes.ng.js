@@ -3,13 +3,28 @@
 angular.module('sportsApp')
     .config(function($stateProvider) {
         $stateProvider
-            .state('scaffold', {
+            .state('base', {
+                abstract: true,
+                templateUrl: "client/main/main.view.ng.html",
+                controller: "MainCtrl"
+            })
+            .state('base-tabs', {
+                abstract: true,
+                templateUrl: "client/main/main.view.ng.html",
+                controller: "MainCtrl"
+            })
+            .state('base-footer', {
+                abstract: true,
+                templateUrl: "client/main/main.view.ng.html",
+                controller: "MainCtrl"
+            })
+            .state('base-tabs-footer', {
                 abstract: true,
                 templateUrl: "client/main/main.view.ng.html",
                 controller: "MainCtrl"
             })
             .state('main-map', {
-                parent: 'scaffold',
+                parent: 'base-tabs-footer',
                 url: '/map',
                 views: {
                     'main-content': {
@@ -19,7 +34,7 @@ angular.module('sportsApp')
                 }
             })
             .state('main-list', {
-                parent: 'scaffold',
+                parent: 'base-tabs-footer',
                 url: '/list',
                 views: {
                     'main-content': {

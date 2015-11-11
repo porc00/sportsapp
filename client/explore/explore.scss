@@ -1,0 +1,20 @@
+// explore.scss
+
+.explore-links{
+	img{
+		max-width: 100%;
+	}
+
+	.explore-link{
+		position: relative;
+		text-align: center;
+		h1{
+			color: white;
+			font-size: 16px;
+			position: absolute;
+			bottom: 0px;
+			
+		}
+	}
+
+}

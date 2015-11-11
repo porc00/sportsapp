@@ -5,48 +5,54 @@ angular.module('sportsApp')
 
 
         var activities = [{
-            name: "Al Merrick",
+            title: "Al Merrick 6,2",
+            desc: "A very fast Surf Board",
             distance: "5 Km from you",
+            extras: "Board Cover",
             type: "rental",
-            position: {
+            location: {
                 lat: -27.598050,
                 lng: -48.593500
             },
-            icon: 'favicon.ico'
+            icon: 'kite.png',
+            image: 'surfboards.jpg'
 
         }, {
-            name: "Wind Surf Class",
+            title: "Wind Surf Class",
             distance: "5 Km from you",
             type: "class",
-            position: {
-                lat: -27.593500,
-                lng: -48.598000
+            location: {
+                lat: -27.460645,
+                lng: -48.476643
             },
             icon: 'surf.png'
         }, {
-            name: "Mavericks",
+            title: "Mavericks",
             distance: "5 Km from you",
             type: "spot",
-            position: {
-                lat: -27.595500,
-                lng: -48.593500
+            location: {
+                lat: -27.782178,
+                lng: -48.490719
             },
-            icon: 'surf.png'
+            icon: 'trekking.png'
         }, {
-            name: "Surfing class",
+            title: "Surfing class",
             distance: "5 Km from you",
             type: "class",
-            position: {
-                lat: -27.594000,
-                lng: -48.593500
+            location: {
+                lat: -27.752407,
+                lng: -48.561444
             },
-            icon: 'surf.png'
+            icon: 'bike.png'
         }];
 
         // Public API
         return {
             getActivities: function() {
                 return activities;
+            },
+            get: function(id) {
+                return activities[id];
             }
         };
     });

@@ -1,13 +1,30 @@
-.things {
-  h1 {
-    text-align: center;
-  }
+.platform-ios{
+    .tab-nav.tabs{
+        background-color:white;
+        height: 28px;
+        border:white;
+    }
+
+    span.tab-title{
+        position:relative;
+        top:-10px;
+        color: black;
+        opacity: 0.84;
+        font-size: 12px; 
+    }
+    a.tab-item.tab-item-active{
+        border:0 solid #0c63ee !important;
+    }
+
+    .mfb-component__button--child, .mfb-component__button--main{
+        background-color: #0c63ee;
+    }
 }
 
-.things {
-  h1 {
-    text-align: center;
-  }
+.floating-button{
+    .mfb-component--br{
+        bottom:40px;
+    }
 }
 
 #map {
@@ -126,8 +143,3 @@
     visibility: visible;
 }
 
-.floating-button{
-    .mfb-component--br{
-        bottom:40px;
-    }
-}

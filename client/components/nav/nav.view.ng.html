@@ -1,9 +1,10 @@
-<ion-footer-bar class="bar-positive">
+<ion-footer-bar ng-class="{'bar-positive': !isIos, 'bar-light':isIos }">
     <div class="footer-div">
-        <a ui-sref="mybox" class="button button-icon icon ion-ios-box"></a>
+        <a ui-sref="mybox" ng-class="{'ion-ios-box': !isIos, 'ion-ios-box-outline':isIos}" class="button button-icon icon"></a>
 
     </div>
     <div class="footer-div">
-        <a class="button button-icon icon ion-android-globe"></a>
+        <a ui-sref="explore" ng-class="{'ion-android-globe': !isIos, 'ion-ios-world-outline':isIos}" class="button button-icon icon"></a>
     </div>
 </ion-footer-bar>
+ion-ios-box-outline

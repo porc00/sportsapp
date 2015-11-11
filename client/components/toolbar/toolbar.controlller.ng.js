@@ -8,10 +8,13 @@ angular.module('sportsApp')
             $scope.popover = popover;
         });
 
+
         $scope.showBack = false;
-        if ($state.current.name !== "main-map") {
-            $scope.showBack = true;
-        }
+
+        $scope.goTo = function(path) {
+            $scope.showBack = !$scope.showBack;
+            $state.go(path);
+        };
 
         $scope.goBack = function() {
             $ionicHistory.goBack();

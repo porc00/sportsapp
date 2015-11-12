@@ -1,6 +1,6 @@
 .platform-ios{
     .tab-nav.tabs{
-        background-color:white;
+        background-color: #e8eaf6;
         height: 28px;
         border:white;
     }
@@ -18,6 +18,10 @@
 
     .mfb-component__button--child, .mfb-component__button--main{
         background-color: #0c63ee;
+    }
+
+    .bar.bar-light.bar-footer{
+        background-color: #e8eaf6;
     }
 }
 
